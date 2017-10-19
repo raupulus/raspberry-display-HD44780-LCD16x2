@@ -15,7 +15,7 @@
 ##    Importar Librerías    ##
 ##############################
 
-#import LCD_LIB_16x2 as LCD
+import LCD_LIB_16x2 as LCD
 
 ##############################
 ##         Variables        ##
@@ -29,21 +29,27 @@ def mostrar_opciones():
     ''')
 
 while True:
+    # Iniciar LCD
+    LCD.lcd_init()
+
+    # Mostrar Menú con las Opciones
     mostrar_opciones()
-    opciones = {}
+
+    # Permite elegir opción
     opcion = raw_input('Opción → ')
 
+    # Comprobar la opción elegida
     if (opcion == str(1)):
         print('Introduce el nuevo valor para la línea 1')
         tmp = raw_input('Cadena → ')
-        #LCD.lcd_string(tmp, LCD.LINE_1)
+        LCD.lcd_string(tmp, LCD.LINE_1)
     elif (opcion == str(2)):
         print('Introduce el nuevo valor para la línea 2')
         tmp = raw_input('Cadena → ')
-        #LCD.lcd_string(tmp, LCD.LINE_2)
+        LCD.lcd_string(tmp, LCD.LINE_2)
     elif (opcion == str(0)):
         print('Limpiando y Cerrando Script')
-        #GPIO.cleanup()
+        GPIO.cleanup()
         break
     else:
         print('Opción no válida')
