@@ -48,6 +48,12 @@ def init_GPIO():
     GPIO.setup(LCD_D6, GPIO.OUT) # DB6
     GPIO.setup(LCD_D7, GPIO.OUT) # DB7
 
+def main():
+    lcd_init()
+    lcd_string(" Inicializando ",LINE_1)
+    lcd_string(" Correcto → LCD 16x2 ",LINE_2)
+    time.sleep(5)
+
 # Inicializar pantalla LCD
 def lcd_init():
     # Activa pines GPIO
