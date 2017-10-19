@@ -1,7 +1,16 @@
-# raspberry_LCD16x2
-Pequeña librería para el modelo 1602 chip HD44780 con el que trabajar más fácil
+# Librería de Control LCD 1602 con chip HD44780 16x2 Raspberry PI
+Pequeña librería para el modelo 1602 chip Hitachi HD44780 con el que trabajar más fácil en este tipo de pantallas de 16 carácteres y 2 líneas.
+
+La mayoría de las pantallas con este chip serán compatibles, aún así el riesgo de usar esta librería y asegurar la compatibilidad de la misma con la pantalla que estés usando no puedo garantizarlo en ningún momento.
+
+Personalmente uso 2 modelos distintos de bajo coste sin problema en casi un año encendida unda de ella.
 
 Mediante los GPIO podemos trabajar de una forma muy sencilla con nuestra raspberry PI, con este script se pretende facilitar el uso de este tipo de pantallas y/o hacer que este funcionando desde el mismo momento en el cual se conecta. También tiene como objetivo servir de apoyo para ser integrado en otros proyectos más ambiciosos como mostrar mensajes de twitter por dicha LCD.
+
+## Información Adicional
+Estas pantallas LCD tienen 8 pines de datos (D0-D7) pero no necesitamos conectarlos todos ya que podemos utilizar los pines de la pantalla LCD (D4-D7) para que la información se transmita en paquetes de 4 bits.
+
+De esta forma reducimos notablemente la cantidad de pines en uso para nuestra Raspberry permitiéndonos conectar otra serie de elementos si fuera el caso.
 
 ## Dependencias (Solo probado en Raspbian stable)
 ```Raspbian
