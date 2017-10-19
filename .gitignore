@@ -1,0 +1,6 @@
+/tmp
+/TMP
+notas.txt
+NOTAS.txt
+*.pyc
+*.pyo
