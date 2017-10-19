@@ -15,7 +15,8 @@
 ##############################
 ##    Importar Librerías    ##
 ##############################
-
+import time  # Importamos la libreria time --> time.sleep
+import LCD_LIB_16x2 as LCD
 
 ##############################
 ##         Variables        ##
