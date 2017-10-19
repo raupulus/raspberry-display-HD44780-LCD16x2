@@ -102,3 +102,33 @@ def lcd_byte(bits, mode):
 
    # Toggle 'Enable' pin
    lcd_toggle_enable()
+
+def lcd_toggle_enable():
+    # Toggle enable
+    time.sleep(E_DELAY)
+    GPIO.output(LCD_E, True)
+    time.sleep(E_PULSE)
+    GPIO.output(LCD_E, False)
+    time.sleep(E_DELAY)
+
+# Función para enviar mensajes al LCD (mensaje, linea)
+def lcd_string(message,line):
+    message = message.ljust(LCD_WIDTH," ")
+
+    lcd_byte(line, LCD_CMD)
+
+    for i in range(LCD_WIDTH):
+        lcd_byte(ord(message[i]),LCD_CHR)
+
+if __name__ == '__main__':
+
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        lcd_byte(0x01, LCD_CMD)
+        lcd_string("!Nos vemos!",LINE_1)
+        # Limpiar aunque exista interrupción
+        GPIO.cleanup()
+
