@@ -7,6 +7,8 @@ Personalmente uso 2 modelos distintos de bajo coste sin problema en casi un año
 
 Mediante los GPIO podemos trabajar de una forma muy sencilla con nuestra raspberry PI, con este script se pretende facilitar el uso de este tipo de pantallas y/o hacer que este funcionando desde el mismo momento en el cual se conecta. También tiene como objetivo servir de apoyo para ser integrado en otros proyectos más ambiciosos como mostrar mensajes de twitter por dicha LCD.
 
+![Imagen de LCD 1602 chip HD44780](./lcd.png "Imagen de LCD 1602 chip HD44780")
+
 ## Información Adicional
 Estas pantallas LCD tienen 8 pines de datos (D0-D7) pero no necesitamos conectarlos todos ya que podemos utilizar los pines de la pantalla LCD (D4-D7) para que la información se transmita en paquetes de 4 bits.
 
