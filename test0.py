@@ -9,6 +9,8 @@
 # ###       www.fryntiz.es        ### #
 #######################################
 
+# El objetivo de este script de pruebas es crear un bucle con mensajes sencillos
+# Ejecutando este script podemos saber si la parte de hardware está correctamente conectada
 
 ##############################
 ##    Importar Librerías    ##
