@@ -106,8 +106,8 @@ def lcd_byte(bits, mode):
     if bits&0x08==0x08:
         GPIO.output(LCD_D7, True)
 
-   # Toggle 'Enable' pin
-   lcd_toggle_enable()
+    # Toggle 'Enable' pin
+    lcd_toggle_enable()
 
 def lcd_toggle_enable():
     # Toggle enable
