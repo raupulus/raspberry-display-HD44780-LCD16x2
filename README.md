@@ -74,5 +74,10 @@ Por último es recomendable limpiar los pines GPIO como es habitual
     GPIO.cleanup()
 ```
 
+## Scripts y Librerías
+- LCD_LIB_16x2 → Librería principal que controla la comunicación con la LCD
+- test_interactivo.py → Es un menú interactivo que deja elegir la línea a cambiar y el valor que se desea establecer. Además permite limpiar la pantalla
+- test0.py → Es una prueba simple con varios mensajes que cambian cada un tiempo de forma automática. Útil para comprobar si hemos conectado correctamente los pines a nuestra raspberry.
+
 ## Reconocimientos de autoría
 La librería **LCD_LIB_16x2** se basa en la del autor **Matt Hawkins** con origen la web de Raspberry-Spy
