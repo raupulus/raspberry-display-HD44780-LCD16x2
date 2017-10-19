@@ -27,6 +27,7 @@ def mostrar_opciones():
     print('''
         1) Cambiar línea 1 de la pantalla LCD
         2) Cambiar línea 2 de la pantalla LCD
+        3) Limpiar pantalla LCD
         0) Salir del script
     ''')
 
@@ -51,6 +52,9 @@ while True:
         print('Introduce el nuevo valor para la línea 2')
         tmp = raw_input('Cadena → ')
         LCD.lcd_string(tmp, LCD.LINE_2)
+    elif (opcion == str(3)):
+        LCD.lcd_string('', LCD.LINE_1)
+        LCD.lcd_string('', LCD.LINE_2)
     elif (opcion == str(0)):
         print('Limpiando y Cerrando Script')
         GPIO.cleanup()
