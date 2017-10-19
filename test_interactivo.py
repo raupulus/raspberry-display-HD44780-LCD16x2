@@ -33,17 +33,17 @@ while True:
     opciones = {}
     opcion = raw_input('Opción → ')
 
-    if (opcion == 1):
+    if (opcion == str(1)):
         print('Introduce el nuevo valor para la línea 1')
         tmp = raw_input('Cadena → ')
         #LCD.lcd_string(tmp, LCD.LINE_1)
-    elif (opcion == 2):
+    elif (opcion == str(2)):
         print('Introduce el nuevo valor para la línea 2')
         tmp = raw_input('Cadena → ')
         #LCD.lcd_string(tmp, LCD.LINE_2)
-    elif (opcion == 0):
+    elif (opcion == str(0)):
         print('Limpiando y Cerrando Script')
         #GPIO.cleanup()
-        break;
+        break
     else:
         print('Opción no válida')
