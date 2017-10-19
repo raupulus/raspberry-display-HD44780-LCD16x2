@@ -29,3 +29,6 @@ Debes prestar atención si tienes otro modelo distinto, en principio entiendo qu
 Personalemnte probado en modelos:
 * Raspberry Pi ZERO
 * Raspberry PI 2 model B
+
+|   Pin     |   LCD     |   Función     |   Pin Rpi     |   Función     |
+|1|     |GND|   |6|     |GND|
