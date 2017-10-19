@@ -16,6 +16,8 @@
 ##############################
 
 import LCD_LIB_16x2 as LCD
+import RPi.GPIO as GPIO  # Importar librería para controlar hardware GPIO
+
 
 ##############################
 ##         Variables        ##
@@ -28,10 +30,12 @@ def mostrar_opciones():
         0) Salir del script
     ''')
 
-while True:
-    # Iniciar LCD
-    LCD.lcd_init()
 
+# Iniciar LCD
+LCD.lcd_init()
+
+
+while True:
     # Mostrar Menú con las Opciones
     mostrar_opciones()
 
