@@ -9,10 +9,12 @@ Mediante los GPIO podemos trabajar de una forma muy sencilla con nuestra raspber
 
 ![Imagen de LCD 1602 chip HD44780](./lcd.png "Imagen de LCD 1602 chip HD44780")
 
+
 ## Información Adicional
 Estas pantallas LCD tienen 8 pines de datos (D0-D7) pero no necesitamos conectarlos todos ya que podemos utilizar los pines de la pantalla LCD (D4-D7) para que la información se transmita en paquetes de 4 bits.
 
 De esta forma reducimos notablemente la cantidad de pines en uso para nuestra Raspberry permitiéndonos conectar otra serie de elementos si fuera el caso.
+
 
 ## Dependencias (Solo probado en Raspbian stable)
 ```Raspbian
@@ -48,6 +50,24 @@ Personalemnte probado en modelos:
 |    14   |    D7    |    18   |   GPIO-24   |
 |    15   |+5V 330ohm|    2    |     +5V     |
 |    16   |    GND   |    6    |     GND     |
+
+
+## Modo de uso
+Primero tenemos que importar la librería en nuestro script
+```python
+    import LCD_LIB_16x2 as LCD
+```
+
+En segundo lugar debemos inicializar la pantalla, esto activará los pines GPIO y dejará lista la LCD para transmitirle cadenas a mostrar:
+```python
+    LCD.lcd_init()
+```
+
+Ya la tenemos lista para enviarle cadenas de texto, lo haremos indicando la cadena como primer parámetro en la llamada a la función **lcd_string()** y la línea que publicaremos como segundo parámetro.
+```python
+    LCD.lcd_string("  Rasbperry Pi ",LCD.LINE_1)
+    LCD.lcd_string("16x2 LCD Pruebas",LCD.LINE_2)
+```
 
 
 ## Reconocimientos de autoría
