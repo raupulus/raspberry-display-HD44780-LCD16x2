@@ -69,6 +69,10 @@ Ya la tenemos lista para enviarle cadenas de texto, lo haremos indicando la cade
     LCD.lcd_string("16x2 LCD Pruebas",LCD.LINE_2)
 ```
 
+Por último es recomendable limpiar los pines GPIO como es habitual
+```python
+    GPIO.cleanup()
+```
 
 ## Reconocimientos de autoría
 La librería **LCD_LIB_16x2** se basa en la del autor **Matt Hawkins** con origen la web de Raspberry-Spy
