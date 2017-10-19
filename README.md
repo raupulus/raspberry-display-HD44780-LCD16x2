@@ -48,3 +48,7 @@ Personalemnte probado en modelos:
 |    14   |    D7    |    18   |   GPIO-24   |
 |    15   |+5V 330ohm|    2    |     +5V     |
 |    16   |    GND   |    6    |     GND     |
+
+
+## Reconocimientos de autoría
+La librería **LCD_LIB_16x2** se basa en la del autor **Matt Hawkins** con origen la web de Raspberry-Spy
