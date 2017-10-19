@@ -30,5 +30,21 @@ Personalemnte probado en modelos:
 * Raspberry Pi ZERO
 * Raspberry PI 2 model B
 
-|   Pin     |   LCD     |   Función     |   Pin Rpi     |   Función     |
-|1|     |GND|   |6|     |GND|
+| Pin LCD |  Función | Pin Rpi |   Función   |
+|---------|----------|---------|-------------|
+|    1    |    GND   |    6    |     GND     |
+|    2    |    +5V   |    2    |     +5V     |
+|    3    | Contraste|    6    |     GND     |
+|    4    |    RS    |    26   |    GPIO-7   |
+|    5    |    RW    |    6    |     GND     |
+|    6    |    EN    |    6    |     GND     |
+|    7    |    D0    |    -    |     GND     |
+|    8    |    D1    |    -    |     GND     |
+|    9    |    D2    |    -    |     GND     |
+|    10   |    D3    |    -    |     GND     |
+|    11   |    D4    |    13   |   GPIO-27   |
+|    12   |    D5    |    15   |   GPIO-22   |
+|    13   |    D6    |    16   |   GPIO-23   |
+|    14   |    D7    |    18   |   GPIO-24   |
+|    15   |+5V 330ohm|    2    |     +5V     |
+|    16   |    GND   |    6    |     GND     |
