@@ -18,3 +18,14 @@ De esta forma reducimos notablemente la cantidad de pines en uso para nuestra Ra
 ```Raspbian
 sudo apt install -y raspi-gpio python3-rpi.gpio python3-pigpio python3-gpiozero python-rpi.gpio python-pigpio python-gpiozero pigpio
 ```
+
+## Diagrama de conexión para Raspberry PI 2
+El siguiente esquema de conexión es orientativo y no tienes porque hacerlo igual si necesitas usar puertos distintos.
+
+**Esto puede variar en distintos modelos**
+
+Debes prestar atención si tienes otro modelo distinto, en principio entiendo que los modelos Zero, Pi B+, Pi2 y Pi3 deberían ser compatibles con el esquema.
+
+Personalemnte probado en modelos:
+* Raspberry Pi ZERO
+* Raspberry PI 2 model B
