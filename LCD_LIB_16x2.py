@@ -31,8 +31,8 @@ LCD_WIDTH = 16
 LCD_CHR = True
 LCD_CMD = False
 
-LINE_1 = 0x80 # LCD dirección en la RAM para la primera línea
-LINE_2 = 0xC0 # LCD dirección en la RAM para la segunda línea
+LINE_1 = 0x80  # LCD dirección en la RAM para la primera línea
+LINE_2 = 0xC0  # LCD dirección en la RAM para la segunda línea
 
 # Constantes de tiempo para retraso y actualización
 E_PULSE = 0.0005
@@ -137,4 +137,3 @@ if __name__ == '__main__':
         lcd_string("!Nos vemos!",LINE_1)
         # Limpiar aunque exista interrupción
         GPIO.cleanup()
-
