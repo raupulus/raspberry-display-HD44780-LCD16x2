@@ -21,3 +21,7 @@ import LCD_LIB_16x2 as LCD
 ##############################
 ##         Variables        ##
 ##############################
+
+
+# Inicializar Pantalla
+LCD.lcd_init()
