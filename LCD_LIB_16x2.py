@@ -37,3 +37,13 @@ LINE_2 = 0xC0 # LCD dirección en la RAM para la segunda línea
 # Constantes de tiempo para retraso y actualización
 E_PULSE = 0.0005
 E_DELAY = 0.0005
+
+# Función para activar los pines GPIO de raspberry
+def init_GPIO():
+    GPIO.setmode(GPIO.BCM) # Use BCM GPIO numbers
+    GPIO.setup(LCD_E, GPIO.OUT) # E
+    GPIO.setup(LCD_RS, GPIO.OUT) # RS
+    GPIO.setup(LCD_D4, GPIO.OUT) # DB4
+    GPIO.setup(LCD_D5, GPIO.OUT) # DB5
+    GPIO.setup(LCD_D6, GPIO.OUT) # DB6
+    GPIO.setup(LCD_D7, GPIO.OUT) # DB7
