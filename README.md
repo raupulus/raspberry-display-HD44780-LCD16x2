@@ -79,9 +79,10 @@ Hay que tener en cuenta que para ciertas funciones será necesario tener instala
 Esto se especificará en cada script de forma independiente, tendrás que adpatarlo a tu sistema operativo ya que todas las pruebas las hacemos bajo Debian/Raspbian y puede variar la sintaxis de instalación en otros sistemas operativos e incluso el nombre de dichas librerías o herramientas.
 
 ## Scripts y Librerías
-- LCD_LIB_16x2 → Librería principal que controla la comunicación con la LCD
+- LCD_LIB_16x2.py → Librería principal que controla la comunicación con la LCD
 - test_interactivo.py → Es un menú interactivo que deja elegir la línea a cambiar y el valor que se desea establecer. Además permite limpiar la pantalla
 - test0.py → Es una prueba simple con varios mensajes que cambian cada un tiempo de forma automática. Útil para comprobar si hemos conectado correctamente los pines a nuestra raspberry.
+- mostrar_IP.py → Contiene funciones para obtener dirección IP pública con python y además otra función para intentar obtener el País de dicha IP. Además existe una función llamada "mostrar()" que obtiene estos valores anteriores y los pinta en cada una de las líneas.
 
 ## Reconocimientos de autoría
 La librería **LCD_LIB_16x2** se basa en la del autor **Matt Hawkins** con origen la web de Raspberry-Spy
