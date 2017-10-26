@@ -68,7 +68,7 @@ def mostrar():
 
     # Obtener datos
     ip = getIp()
-    pais = getPais()
+    pais = getPais(ip)
 
     # Enviando mensaje a cada línea
     LCD.lcd_string(ip, LCD.LINE_1)
