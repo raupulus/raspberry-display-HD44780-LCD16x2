@@ -74,6 +74,10 @@ Por último es recomendable limpiar los pines GPIO como es habitual
     GPIO.cleanup()
 ```
 
+Hay que tener en cuenta que para ciertas funciones será necesario tener instalado una serie de librerías o herramientas externos normalmente dependientes del sistema operativo.
+
+Esto se especificará en cada script de forma independiente, tendrás que adpatarlo a tu sistema operativo ya que todas las pruebas las hacemos bajo Debian/Raspbian y puede variar la sintaxis de instalación en otros sistemas operativos e incluso el nombre de dichas librerías o herramientas.
+
 ## Scripts y Librerías
 - LCD_LIB_16x2 → Librería principal que controla la comunicación con la LCD
 - test_interactivo.py → Es un menú interactivo que deja elegir la línea a cambiar y el valor que se desea establecer. Además permite limpiar la pantalla
