@@ -60,7 +60,8 @@ def getPais(IP):
         pais = ''
 
     # Devuelve el país o la cadena vacía
-    return str(pais)
+    print('El país es → ' + pais)
+    return pais
 
 def mostrar():
     # Inicializar Pantalla
