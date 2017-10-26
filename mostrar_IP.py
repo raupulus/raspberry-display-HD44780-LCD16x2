@@ -23,6 +23,7 @@
 import urllib2  # Librería para obtener web
 import commands  # Usado para obtener información del país
 import LCD_LIB_16x2 as LCD
+import RPi.GPIO as GPIO  # Importar librería para controlar hardware GPIO
 
 # Función para obtener IP
 def getIp():
