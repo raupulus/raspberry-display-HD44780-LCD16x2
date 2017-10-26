@@ -17,6 +17,7 @@
 ##############################
 import time  # Importamos la libreria time --> time.sleep
 import LCD_LIB_16x2 as LCD
+import RPi.GPIO as GPIO  # Importar librería para controlar hardware GPIO
 
 ##############################
 ##         Variables        ##
