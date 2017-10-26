@@ -73,3 +73,6 @@ def mostrar():
     # Enviando mensaje a cada línea
     LCD.lcd_string(ip, LCD.LINE_1)
     LCD.lcd_string(pais, LCD.LINE_2)
+
+# Llamada a la función mostrar()
+mostrar()
