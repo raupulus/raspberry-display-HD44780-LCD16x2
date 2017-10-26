@@ -12,6 +12,9 @@
 # Script con una función que muestra por la pantalla LCD la dirección
 # ip pública del equipo/dispositivo que ejecuta el script
 
+# Resolviendo dependencias en Debian y Raspbian:
+# sudo apt install geoip-bin python-geoip python-geoip2 python3-geoip
+
 ##############################
 ##    Importar Librerías    ##
 ##############################
