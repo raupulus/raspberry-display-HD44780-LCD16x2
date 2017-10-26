@@ -38,7 +38,7 @@ def getIp():
             ip += line
 
     print ('La ip es → ' + ip.strip())
-    return ip.strip()
+    return str(ip.strip())
 
 #Función para obtener País
 def getPais(IP):
@@ -58,4 +58,18 @@ def getPais(IP):
         pais = ''
 
     # Devuelve el país o la cadena vacía
-    return pais
+    return str(pais)
+
+def mostrar():
+    # Inicializar Pantalla
+    LCD.lcd_init()
+
+    # Obtener datos
+    ip = getIp()
+    pais = getPais()
+
+    # Enviando mensaje a cada línea
+    LCD.lcd_string(ip, LCD.LINE_1)
+    LCD.lcd_string(pais, LCD.LINE_2)
+
+GPIO.cleanup()
