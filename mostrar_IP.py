@@ -21,6 +21,7 @@
 ##############################
 
 import urllib2  # Librería para obtener web
+import commands  # Usado para obtener información del país
 
 # Función para obtener IP
 def getIp():
@@ -39,3 +40,22 @@ def getIp():
     print ('La ip es → ' + ip.strip())
     return ip.strip()
 
+#Función para obtener País
+def getPais(IP):
+    # Extraer cadena con el pais
+    pais = commands.getoutput("geoiplookup " + str(IP))
+
+    # Limpiar País
+    pais = pais.split('\n')[0].split(': ')[1]
+
+    # Si no está instalado el programa "geoiplookup"
+    if pais == "sh: geoiplookup: not found":
+        print("Necesitas instalar geoiplookup para poder continuar")
+        pais = ''
+    #Cuando ocurre un error o extrae cadena no válida
+    elif len(str(pais)) > 200:
+        print("No ha sido posible conseguir el país para la IP → " + str(IP))
+        pais = ''
+
+    # Devuelve el país o la cadena vacía
+    return pais
