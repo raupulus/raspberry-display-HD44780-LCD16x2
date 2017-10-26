@@ -22,6 +22,7 @@
 
 import urllib2  # Librería para obtener web
 import commands  # Usado para obtener información del país
+import LCD_LIB_16x2 as LCD
 
 # Función para obtener IP
 def getIp():
