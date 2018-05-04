@@ -23,7 +23,7 @@
 ##         Variables        ##
 ##############################
 
-import urllib2  # Librería para obtener web
+import urllib3  # Librería para obtener web
 import commands  # Usado para obtener información del país
 import LCD_LIB_16x2 as LCD
 import RPi.GPIO as GPIO  # Importar librería para controlar hardware GPIO
@@ -34,7 +34,7 @@ def getIp():
     ip = ''
 
     # Añadir web html a variable
-    web = urllib2.urlopen('http://checkip.dyndns.org').read()
+    web = urllib3.urlopen('http://checkip.dyndns.org').read()
 
     # Recorrer html descargado en busca de números que conforman la ip
     for line in str(web):
