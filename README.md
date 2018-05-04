@@ -18,7 +18,7 @@ De esta forma reducimos notablemente la cantidad de pines en uso para nuestra Ra
 
 ## Dependencias (Solo probado en Raspbian stable)
 ```Raspbian
-sudo apt install raspi-gpio python3-rpi.gpio python3-pigpio python3-gpiozero python-rpi.gpio python-pigpio python-gpiozero pigpio
+sudo apt install raspi-gpio python3-rpi.gpio python3-pigpio python3-gpiozero python-rpi.gpio python-pigpio python-gpiozero pigpio python3-urllib3 python-urllib3
 ```
 
 ## Diagrama de conexión para Raspberry PI 2
