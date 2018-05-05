@@ -28,7 +28,7 @@ El siguiente esquema de conexión es orientativo y no tienes porque hacerlo igua
 
 Debes prestar atención si tienes otro modelo distinto, en principio entiendo que los modelos Zero, Pi B+, Pi2 y Pi3 deberían ser compatibles con el esquema.
 
-Personalemnte probado en modelos:
+Personalmente probado en modelos:
 * Raspberry Pi ZERO
 * Raspberry PI 2 model B
 
